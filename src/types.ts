@@ -1,4 +1,4 @@
-export type PageType = 'home' | 'about' | 'experience' | 'portfolio' | 'contact' | 'project-detail';
+export type PageType = 'home' | 'about' | 'experience' | 'portfolio' | 'contact' | 'project-detail' | 'cards';
 
 export type ProjectCategory =
   | 'All'

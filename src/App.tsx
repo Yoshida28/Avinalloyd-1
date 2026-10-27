@@ -10,6 +10,7 @@ import { ContactView } from './components/ContactView';
 import { ProjectDetailView } from './components/ProjectDetailView';
 import { BookingModal } from './components/BookingModal';
 import { CVModal } from './components/CVModal';
+import { DigitalCardsView } from './components/DigitalCardsView';
 import { PROJECTS } from './data/portfolioData';
 
 export default function App() {
@@ -36,7 +37,7 @@ export default function App() {
         }
       }
 
-      if (['about', 'experience', 'portfolio'].includes(hash)) {
+      if (['about', 'experience', 'portfolio', 'cards'].includes(hash)) {
         setSelectedProject(null);
         setCurrentPage(hash as PageType);
       } else {
@@ -69,12 +70,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#fbf9f6] text-[#141312] flex flex-col font-body selection:bg-[#141312] selection:text-[#fbf9f6]">
-      {/* Global Fixed Header */}
-      <Header
-        currentPage={currentPage}
-        onNavigate={handleNavigate}
-        onOpenBooking={handleOpenEmail}
-      />
+      {/* Keep the digital card focused on the card itself. */}
+      {currentPage !== 'cards' && (
+        <Header
+          currentPage={currentPage}
+          onNavigate={handleNavigate}
+          onOpenBooking={handleOpenEmail}
+        />
+      )}
 
       {/* Main Page View Router */}
       <main className="flex-grow">
@@ -114,6 +117,10 @@ export default function App() {
           <ContactView onOpenBooking={handleOpenEmail} />
         )}
 
+        {currentPage === 'cards' && (
+          <DigitalCardsView />
+        )}
+
         {currentPage === 'project-detail' && selectedProject && (
           <ProjectDetailView
             project={selectedProject}
@@ -125,11 +132,13 @@ export default function App() {
         )}
       </main>
 
-      {/* Global Footer */}
-      <Footer
-        onNavigate={handleNavigate}
-        onOpenBooking={handleOpenEmail}
-      />
+      {/* Cards are a compact, self-contained view and do not need the site footer. */}
+      {currentPage !== 'cards' && (
+        <Footer
+          onNavigate={handleNavigate}
+          onOpenBooking={handleOpenEmail}
+        />
+      )}
 
       {/* Curriculum Vitae Viewer / Downloader */}
       <CVModal isOpen={isCVOpen} onClose={() => setIsCVOpen(false)} />
