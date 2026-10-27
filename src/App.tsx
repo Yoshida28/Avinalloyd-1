@@ -54,6 +54,22 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  // Digital cards are intended for mobile. Desktop visitors go to the main site.
+  useEffect(() => {
+    const routeDesktopCardsHome = () => {
+      if (currentPage === 'cards' && window.innerWidth >= 768) {
+        setSelectedProject(null);
+        setCurrentPage('home');
+        window.location.hash = '';
+        window.scrollTo({ top: 0 });
+      }
+    };
+
+    routeDesktopCardsHome();
+    window.addEventListener('resize', routeDesktopCardsHome);
+    return () => window.removeEventListener('resize', routeDesktopCardsHome);
+  }, [currentPage]);
+
   const handleNavigate = (page: PageType) => {
     setSelectedProject(null);
     setCurrentPage(page);
