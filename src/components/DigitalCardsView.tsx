@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TRIUNE_LOGO, TECHNEAT_LOGO, HERO_IMAGE_SCREEN1 } from '../data/portfolioData';
+import { TRIUNE_LOGO, TECHNEAT_LOGO, DIGITAL_CARD_PORTRAIT } from '../data/portfolioData';
 
 /* ─────────────────────────────────────────────
    Card data
@@ -142,7 +142,7 @@ const MobileCardPage: React.FC<MobileCardPageProps> = ({ card, activeCard, onSwi
           }}
         >
           <img
-            src={HERO_IMAGE_SCREEN1}
+            src={DIGITAL_CARD_PORTRAIT}
             alt="Avina Lloyd"
             className="h-full w-full object-contain object-bottom pt-3"
           />
@@ -370,7 +370,7 @@ const BusinessCard: React.FC<BusinessCardProps> = ({ card, isActive, activeCard,
               <div
                 className="w-24 h-24 overflow-hidden"
               >
-                <img src={HERO_IMAGE_SCREEN1} alt="Avina Lloyd" className="w-full h-full object-contain object-bottom" />
+                <img src={DIGITAL_CARD_PORTRAIT} alt="Avina Lloyd" className="w-full h-full object-contain object-bottom" />
               </div>
               <span
                 className="font-mono-code text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full font-bold"

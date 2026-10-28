@@ -1,7 +1,9 @@
 import { Project, TimelineItem, ServiceItem, EducationItem, AwardItem, DignitaryEngagement } from '../types';
 import avinaLloydHero from '../avina-lloyd-hero.png';
+import avinaLloydCardPortrait from '../avina-lloyd-card.png';
 
 export const HERO_IMAGE_SCREEN1 = avinaLloydHero;
+export const DIGITAL_CARD_PORTRAIT = avinaLloydCardPortrait;
 
 export const TRIUNE_LOGO = '/images/triune-business-ventures-logo.svg';
 export const TECHNEAT_LOGO = '/images/techneat-logo.svg';
