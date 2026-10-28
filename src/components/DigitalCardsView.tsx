@@ -44,9 +44,9 @@ const CARDS: CardData[] = [
     badgeTextColor: '#c5a059',
     linkedinUrl: 'https://www.linkedin.com/in/avina-lloyd/',
     whatsappNumber: '+91 80500 05569',
-    email: 'avina16@gmail.com',
+    email: 'avina.lloyd@triunebusiness.com',
     website: 'https://www.triunebusinessventures.com/',
-    vcardData: `BEGIN:VCARD\nVERSION:3.0\nFN:Avina Lloyd\nN:Lloyd;Avina;;;\nORG:Triune Business Ventures Pvt. Ltd.\nTITLE:Chief Executive Officer (CEO)\nTEL;TYPE=CELL:+918050005569\nEMAIL;TYPE=WORK:avina16@gmail.com\nURL:https://www.linkedin.com/in/avina-lloyd/\nNOTE:CEO at Triune Business Ventures.\nEND:VCARD`,
+    vcardData: `BEGIN:VCARD\nVERSION:3.0\nFN:Avina Lloyd\nN:Lloyd;Avina;;;\nORG:Triune Business Ventures Pvt. Ltd.\nTITLE:Chief Executive Officer (CEO)\nTEL;TYPE=CELL:+918050005569\nEMAIL;TYPE=WORK:avina.lloyd@triunebusiness.com\nURL:https://www.linkedin.com/in/avina-lloyd/\nNOTE:CEO at Triune Business Ventures.\nEND:VCARD`,
   },
   {
     id: 'techneat',
@@ -65,9 +65,9 @@ const CARDS: CardData[] = [
     badgeTextColor: '#ffffff',
     linkedinUrl: 'https://www.linkedin.com/in/avina-lloyd/',
     whatsappNumber: '+91 80500 05569',
-    email: 'avina16@gmail.com',
+    email: 'Justaskavina@gmail.com',
     website: 'https://techneatsolutions.com/',
-    vcardData: `BEGIN:VCARD\nVERSION:3.0\nFN:Avina Lloyd\nN:Lloyd;Avina;;;\nORG:Techneat Info Solutions\nTITLE:Chief Financial Officer (CFO)\nTEL;TYPE=CELL:+918050005569\nEMAIL;TYPE=WORK:avina16@gmail.com\nURL:https://www.linkedin.com/in/avina-lloyd/\nNOTE:CFO at Techneat Info Solutions.\nEND:VCARD`,
+    vcardData: `BEGIN:VCARD\nVERSION:3.0\nFN:Avina Lloyd\nN:Lloyd;Avina;;;\nORG:Techneat Info Solutions\nTITLE:Chief Financial Officer (CFO)\nTEL;TYPE=CELL:+918050005569\nEMAIL;TYPE=WORK:Justaskavina@gmail.com\nURL:https://www.linkedin.com/in/avina-lloyd/\nNOTE:CFO at Techneat Info Solutions.\nEND:VCARD`,
   },
 ];
 
@@ -636,7 +636,7 @@ export const DigitalCardsView: React.FC = () => {
             Open for board advisory, executive partnerships, COO mandates, and cross-border trade initiatives.
           </p>
           <a
-            href="mailto:avina16@gmail.com?subject=Executive%20Inquiry%20%E2%80%94%20Avina%20Lloyd"
+            href="mailto:avina.lloyd@triunebusiness.com?subject=Executive%20Inquiry%20%E2%80%94%20Avina%20Lloyd"
             className="inline-flex items-center gap-2 mt-4 px-6 py-2.5 bg-[#141312] text-[#c5a059] font-mono-code text-[11px] uppercase tracking-widest rounded-xl hover:bg-[#22211e] active:scale-95 transition-all font-semibold shadow-sm"
           >
             <span>Email Avina Lloyd</span>
