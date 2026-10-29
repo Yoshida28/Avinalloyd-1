@@ -65,9 +65,9 @@ const CARDS: CardData[] = [
     badgeTextColor: '#ffffff',
     linkedinUrl: 'https://www.linkedin.com/in/avina-lloyd/',
     whatsappNumber: '+91 80500 05569',
-    email: 'Justaskavina@gmail.com',
+    email: 'Avina@techneatsolutions.com',
     website: 'https://techneatsolutions.com/',
-    vcardData: `BEGIN:VCARD\nVERSION:3.0\nFN:Avina Lloyd\nN:Lloyd;Avina;;;\nORG:Techneat Info Solutions\nTITLE:Chief Financial Officer (CFO)\nTEL;TYPE=CELL:+918050005569\nEMAIL;TYPE=WORK:Justaskavina@gmail.com\nURL:https://www.linkedin.com/in/avina-lloyd/\nNOTE:CFO at Techneat Info Solutions.\nEND:VCARD`,
+    vcardData: `BEGIN:VCARD\nVERSION:3.0\nFN:Avina Lloyd\nN:Lloyd;Avina;;;\nORG:Techneat Info Solutions\nTITLE:Chief Financial Officer (CFO)\nTEL;TYPE=CELL:+918050005569\nEMAIL;TYPE=WORK:Avina@techneatsolutions.com\nURL:https://www.linkedin.com/in/avina-lloyd/\nNOTE:CFO at Techneat Info Solutions.\nEND:VCARD`,
   },
 ];
 
